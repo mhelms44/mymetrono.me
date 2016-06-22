@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="buffer-loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MyMetrono.me - Simply stay in time</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="metronomeicon.png" alt="">
+        <h1 class="headertext1">My</h1>
+        <h1 class="headertext2">Metrono.me</h1>
+        <div class="buttonlink">
+            <form method="get" action="https://github.com/mhelms44/mymetrono.me">
+                <button type="submit" class="button">View on Github</button>
+            </form>
+        </div>
+
+    </header>
+    <div class="wrapper">
+        <div id="Foo"><img class="qnote" src="qnote.png" alt=""></div>
+        <br />
+
+        <input type="image" src="play.png" name="play" id="playbtn" class=" start" onclick="startPlayingRhythm1(bufferLoader.bufferList);" />
+
+
+        <input type="image" src="stop.png" name="stop" class="stop" onclick="myFunction()" />
+
+        <br /><br /><br /><br />
+        <div class="userinput">
+            <input type="number" class="inputBox" id="userinput" title="tempo" min="1" max="300" placeholder="120">
+            <input type="number" class="inputBox" id="usertime" title="time signature" min="1" max="12" placeholder="4">
+            <p id="error"></p>
+            <p id="error2"></p>
+        </div>
+
+        <script>
+            function myFunction() {
+                location.reload();
+            }
+        </script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </div>
+    <footer>
+        <p class="footernotes">
+            &hearts; Handcrafted in North Carolina with a combination of Web Audio API and plain old JavaScript.<br />
+            Version 0.5 - Michael Helms
+        </p>
+        <p class="credits">
+            Icon Credits: Metronome by Philip Hogeboom,
+            Quarter Note by Arthur Shlain,<br />
+            Play by Luboš Volkov,
+            Stop by artworkbean, all from the Noun Project
+        </p>
+    </footer>
+</body>
+
+
+</html>
